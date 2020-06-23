@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <=11
+*/
+
 :root {
 	--basic-black: #000000;
 	--basic-dark: #363636;
@@ -794,7 +801,6 @@ content: "";
 	
 }
 	
-
 .conditions {
 	width: 1160px;
 	height: 288px;
@@ -1004,14 +1010,16 @@ content: "";
 }
 
 .partner-logos a {
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	opacity: 0.17;
 }
 
 .partner-logos a:hover,
 .partner-logos a:active,
 .partner-logos a:focus {
-	filter: none;
+	-webkit-filter: none;
+	        filter: none;
 	opacity: 1;
 }
 
@@ -1539,7 +1547,8 @@ ul.curiers{
 	width: 760px;
 	padding-right: calc((100% - 1160px)/2);
 	display: grid;
-	column-gap: 40px;
+	-moz-column-gap: 40px;
+	     column-gap: 40px;
 	row-gap: 48px;
 	margin-left: 72px; 
 	margin-top: 70px;
@@ -1671,7 +1680,9 @@ legend{
 
 .filter-option label {
 	position: relative;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
 }
 	
 .filter-color-checkbox + label::before {
@@ -1849,6 +1860,7 @@ legend{
 .catalog-item-info {
 	position: relative;
 	z-index: 0;
+	background: var(--basic-white);
 }
 
 .new-label {
@@ -1858,7 +1870,10 @@ legend{
 	right: 27px;
 }
 
-.catalog-item-info img{
+.catalog-image {
+	width: 360px;
+	height: 380px;
+	object-fit: contain;
 	position: relative;
 	z-index: 1;	
 }
@@ -2050,7 +2065,6 @@ legend{
 
 .wrapper-footer {
 	width: 100%;
-	background: yellow;
 	background-color: var(--basic-dark)
 }
 
@@ -2353,7 +2367,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
