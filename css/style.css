@@ -1505,7 +1505,7 @@ ul.curiers{
 
 .filter-sorting-bar .filter-arrow-up {
 	margin-top: 13px;
-	margin-left: 197px;
+	margin-left: auto;
 	opacity: 0.2;
 }
 
@@ -1520,6 +1520,7 @@ ul.curiers{
 .filter-sorting-bar .filter-arrow-down {
 	margin-top: 13px;
 	margin-left: 22px;
+	margin-right: 4px;
 	opacity: 1;
 }
 
@@ -1623,17 +1624,20 @@ legend{
 	margin-bottom: 13px;
 }
 
-.range-controls .bar {
-	width: 60%;
-	height: 2px;
-	background-color: var(--special-green);
-	opacity: 1;
-}
+
 
 .range-controls .scale {
 	height: 2px;
 	background-color: var(--basic-black);
 	opacity: 0.2;
+}
+
+.range-controls .bar {
+	margin-top: -2px;
+	width: 60%;
+	height: 2px;
+	background-color: var(--special-green);
+	opacity: 1;
 }
 
 .range-controls .toggle {
@@ -1973,14 +1977,15 @@ legend{
 }
 
 .product-description {
-	width: 276px;
+	width: 273px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 .price {
-	margin-right: -5px;
+	margin-right: -7px;
 	padding-top: 2px;
+	padding-left: 2px;
 	margin-left: 5px;
 	font-family: Open Sans;
 	font-size: 16px;
