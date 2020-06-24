@@ -1519,7 +1519,7 @@ ul.curiers{
 
 .filter-sorting-bar .filter-arrow-down {
 	margin-top: 13px;
-	margin-left: 23px;
+	margin-left: 22px;
 	opacity: 1;
 }
 
@@ -1552,6 +1552,7 @@ ul.curiers{
 	row-gap: 48px;
 	margin-left: 72px; 
 	margin-top: 70px;
+	margin-bottom: auto;
 	grid-template-columns: 360px 360px;
 }
 
@@ -1823,6 +1824,7 @@ legend{
 	padding: 0;
 	margin-left: 37px;
 	margin-top: 31px;
+	margin-bottom: 30px;
 	background-color: var(--basic-grey-light);
 	border: 0;
 	letter-spacing: 0.2em;
