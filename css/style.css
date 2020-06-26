@@ -628,6 +628,7 @@ content: "";
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	z-index: 0;
+	transition: all 0.25s ease;
 }
 
 .slide-details::before {
@@ -639,6 +640,7 @@ content: "";
 	left: -44px;
 	background-color: var(--special-yellow-dark);
 	z-index: -1;
+	transition: all 0.25s ease;
 }
 
 .slide-details:hover::before,
@@ -651,10 +653,12 @@ content: "";
 	left: -44px;
 	background-color: var(--special-yellow-dark);
 	z-index: -1;
+	transition: all 0.25s ease;
 }
 
 .slide-details:active {
 	color: var(--special-black-opacitive03);
+	transition: all 0.25s ease;
 }
 
 .slide-item-description02 {
@@ -872,6 +876,7 @@ content: "";
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: all 0.25s ease;
 }
 
 .label-delivery {
@@ -908,6 +913,7 @@ content: "";
 	top: 7px;
 	background: var(--special-yellow-dark);
 	z-index: -1;
+	transition: all 0.25s ease;
 }
 
 .label-delivery::before,
@@ -936,6 +942,7 @@ content: "";
 	top: -10px;
 	background: var(--special-yellow-dark);
 	z-index: -1;
+	transition: all 0.25s ease;
 }
 
 .slider-toggle-delivery:checked + .label-delivery::before,
@@ -949,6 +956,7 @@ content: "";
 	left: -19px;
 	background: var(--basic-black);
 	z-index: -1;
+	transition: all 0.25s ease;
 }
 
 .slider-toggle-warranty:checked + .label-warranty::before  {	
@@ -963,6 +971,7 @@ content: "";
 .slider-toggle-warranty:checked + .label-warranty,
 .slider-toggle-credit:checked + .label-credit  {
 	color: var(--special-yellow);
+	transition: all 0.25s ease;
 }
 
 .slider-toggle-delivery::before {
@@ -1014,6 +1023,7 @@ content: "";
 	-webkit-filter: grayscale(100%);
 	        filter: grayscale(100%);
 	opacity: 0.17;
+	transition: all 0.5s ease;
 }
 
 .partner-logos a:hover,
@@ -1022,6 +1032,7 @@ content: "";
 	-webkit-filter: none;
 	        filter: none;
 	opacity: 1;
+	transition: all 0.7s ease;
 }
 
 .write-us {
@@ -1835,6 +1846,7 @@ legend{
 	top: 7px;
 	z-index: -1;
     background: var(--special-yellow-dark);
+	transition: all 0.25s ease;
 }
 
 .show-button:hover::before,
@@ -1847,6 +1859,7 @@ legend{
 	top: -9px;
 	z-index: -1;
     background: var(--special-yellow-dark);
+	transition: all 0.25s ease;
 }
 
 .show-button:active {
@@ -1860,11 +1873,12 @@ legend{
 	background: var(--basic-white);
 }
 
-.new-label {
-	display: block;
+.new-item:before {
+	content:url(../img/new.svg);
 	position: absolute;
 	top: 29px;
 	right: 27px;
+	z-index: 2;
 }
 
 .catalog-image {

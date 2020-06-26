@@ -5,14 +5,19 @@ let feedbackClose = document.querySelector(".button-close");
 feedbackLink.addEventListener("click", function (evt){
 	evt.preventDefault();
 	feedbackPopup.classList.add("feedback-show");
-	//feedbackPopup.style.top = "30px";
 });
 
 feedbackClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedbackPopup.classList.remove("feedback-show");
 });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (feedbackPopup.classList.contains("feedback-show")) {
+      evt.preventDefault();
+      feedbackPopup.classList.remove("feedback-show");
+    }
+  }
+});
  
-console.log (window.pageYOffset);
-console.log (window.innerHeight);
-console.log (window.screen.width);
