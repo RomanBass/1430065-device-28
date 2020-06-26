@@ -33,10 +33,11 @@
 }
 
 body {
+	position: relative;
     min-width: 1440px;
 	margin: 0;
 	padding: 0;
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 800;
@@ -48,13 +49,6 @@ main {
 	background-color: var(--basic-white);
 	width: 100%;
 	margin: 0 auto;
-}
-
-
-main p{
-	font-family: Open Sans;
-	font-size: 15px;
-	line-height: 28px;
 }
 
 a {
@@ -123,11 +117,10 @@ header {
 .header-main {
 	position: relative;
 	min-height: 300px;
-	
 }
 
 .menu-1-header {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	min-height: 50px;
@@ -140,7 +133,7 @@ header {
 }
 
 .menu-1-header-noindex {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	min-height: 50px;
@@ -157,7 +150,7 @@ header {
 }
 
 .search-input {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	width: 316px;
@@ -202,7 +195,7 @@ header {
 }
 
 .search-button {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	width: 84px;
@@ -374,7 +367,7 @@ header {
 	min-height: 135px;
 	padding-left: 60px;
 	padding-top: 30px;
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	display: none;
@@ -621,6 +614,8 @@ content: "";
 }	
 
 .slide-item-motto {
+	font-family: "Open Sans", "Verdana", sans-serif;
+	font-size: 15px;
 	line-height: 20px; 
 }
 
@@ -672,7 +667,7 @@ content: "";
 	
 
 .slide-item-description p{
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-size: 36px;
 	line-height: 42px;
 	font-weight: 300;
@@ -680,7 +675,7 @@ content: "";
 }
 
 .slide-item-description span{
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: 300;
@@ -814,13 +809,6 @@ content: "";
 	z-index: 0;
 }
 
-.conditions p {
-	font-family: Open Sans;
-	font-size: 15px;
-	line-height: 30px;
-	letter-spacing: 0.1em;
-}
-
 .conditions:after {
 	content: "";
 	position: absolute;
@@ -847,11 +835,24 @@ content: "";
 }
 
 .delivery-slide p {
+	font-family: "Open Sans", "Verdana", sans-serif;
+	font-size: 15px;
 	line-height: 28px;
+	letter-spacing: 0.1em;
+}
+
+.warranty-slide p {
+	font-family: "Open Sans", "Verdana", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.1em;
 }
 
 .credit-slide p {
+	font-family: "Open Sans", "Verdana", sans-serif;
+	font-size: 15px;
 	line-height: 28px;
+	letter-spacing: 0.1em;
 }
 
 .warranty-slide img {
@@ -1114,9 +1115,8 @@ content: "";
 	margin-bottom: 40px;
 }
 	
-
 .about-us-and-contacts p {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 28px;
 	margin-bottom: 40px;
@@ -1135,14 +1135,19 @@ content: "";
 }
 
 .feedback {
-	position: absolute;
+	position: fixed;
+	z-index: 3;
 	display: none;
 	width: 960px;
 	min-height: 550px;
-	top: -640px;
-	left: 86px;
+	top: calc((100% - 550px) / 2);
+	left: calc((100% - 960px) / 2);
 	background-color: var(--basic-white);
 	box-shadow: 0px 10px 16px var(--special-black-opacitive015);
+}
+
+.feedback-show {
+	display: block;
 }
 
 .button-close {
@@ -1158,6 +1163,7 @@ content: "";
 	border: 0;
 	opacity: 0.5;
 	outline: none;
+	cursor: pointer;
 }
 
 .button-close:hover {
@@ -1187,7 +1193,7 @@ content: "";
 	width: 338px;
 	height: 48px;
 	padding-left: 20px;
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 	border: 0;
@@ -1225,7 +1231,7 @@ content: "";
 }
 
 .appointment-item label {
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 800;	
@@ -1243,7 +1249,7 @@ content: "";
 	height: 146px;
 	padding-left: 20px;
 	padding-top: 15px;
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 	border: 2px solid var(--special-form-background);
@@ -1282,7 +1288,7 @@ content: "";
 	margin-top: 13px;
 	margin-left: 100px;
 	margin-bottom: 70px;
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 800;
@@ -1291,6 +1297,7 @@ content: "";
 	background-color: var(--basic-white);
 	z-index: 0;
 	outline: none;
+	cursor: pointer;
 }
 
 .button-send-form::before {
@@ -1302,22 +1309,6 @@ content: "";
 	top: 8px;
 	z-index: -1;
     background: var(--special-yellow);
-}
-
-.button-send-form:hover::before,
-.button-send-form:active::before {
-	content: "";
-	position: absolute;
-	width: 200px;
-    height: 40px;
-	left: 0px;
-	top: -9px;
-	z-index: -1;
-    background: var(--special-yellow);
-}
-
-.button-send-form:active {
-	color: var(--special-black-opacitive03);
 }
 
 .curiers{
@@ -1379,7 +1370,7 @@ ul.curiers{
 	margin-top: 30px;
 	padding-left: 0;
 	margin-bottom: 50px;
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 	display: flex;
@@ -1469,7 +1460,7 @@ ul.curiers{
 }
 
 .filter-sorting-bar p{
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 800;
@@ -1477,7 +1468,7 @@ ul.curiers{
 }
 
 .filter-sorting-bar ul{
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 	list-style-type: none;
@@ -1584,7 +1575,7 @@ ul.curiers{
 }
 
 .filter-option {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 	list-style: none;
@@ -1604,7 +1595,7 @@ legend{
 
 .price-controls label,
 .price-controls input {
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 16px;
@@ -1821,7 +1812,7 @@ legend{
 
 .show-button {
 	position: relative;
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -1891,7 +1882,7 @@ legend{
 }
 
 .cart-button {
-	font-family: Gilroy;
+	font-family: "Gilroy", "Arial", san-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -1937,7 +1928,7 @@ legend{
 }
 
 .compare-button {
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	background-color: var(--basic-white);
@@ -1987,7 +1978,7 @@ legend{
 	padding-top: 2px;
 	padding-left: 2px;
 	margin-left: 5px;
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	letter-spacing: 0.05em;
@@ -2111,7 +2102,7 @@ footer {
 }
 
 .menu-1-footer a{
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	color: white;	
@@ -2233,7 +2224,7 @@ footer {
 }
 
 .address{
-	font-family: Open Sans;
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 }
@@ -2280,11 +2271,12 @@ footer {
 	opacity: 0.3;	
 }
 
-.phone-number{
-	font-family: Open Sans;
+.menu-2-footer .phone-number{
+	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	margin-left: 37px;
+	letter-spacing: 0em;
 }
 
 .partner-links {
