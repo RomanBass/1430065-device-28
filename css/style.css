@@ -1103,17 +1103,31 @@ content: "";
 	position: relative;
 	margin-left: auto;
 	width: 560px;
-	z-index:0;
+	
 }
 
 .big-map {
-	position: absolute;
-	top: 36px;
-	left: -516px;
-	z-index: 1;
+	position: fixed;
+	width: 994px;
+	height: 593px;
+	z-index: 4;
+	top: calc((100% - 593px) / 2);
+	left: calc((100% - 994px) / 2);
 	display: none;
 }
 
+.big-map-show {
+	display: block;
+	animation: bounce-top 0.6s;
+}
+
+.big-map img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+	
 .button-close-big-map {
 	position: absolute;
 	width: 55px;
@@ -1126,18 +1140,22 @@ content: "";
 	background-image: url(../img/button-close.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	background-color: none;
+	background-color: transparent;
 	border: 0;
 	opacity: 0.5;
 	outline: none;
+	cursor: pointer;
+	transition: opacity 0.25s ease;
 }
 
 .button-close-big-map:hover {
 	opacity: 1;
+	transition: opacity 0.25s ease;
 }
 
 .button-close-big-map:active {
 	opacity: 0.3;
+	transition: opacity 0.25s ease;
 }
 
 .our-detailes {
@@ -1230,6 +1248,11 @@ content: "";
 
 .feedback-show {
 	display: block;
+	animation: bounce-left 0.6s;
+}
+
+.feedback-error {
+	animation: shake 0.6s;
 }
 
 .button-close {
@@ -2503,6 +2526,65 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@keyframes bounce-left {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 	
 @font-face {
     font-family: 'Open Sans';
