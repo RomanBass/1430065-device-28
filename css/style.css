@@ -2591,22 +2591,22 @@ input[type="radio"].visually-hidden {
     font-style: normal;
     font-weight: 300;
     src: local('Open Sans Light'), local('OpenSans-Light'),
-       url('open-sans-v17-latin_cyrillic-300.woff2') format('woff2'),
-       url('open-sans-v17-latin_cyrillic-300.woff') format('woff');
+       url('../font/open-sans-v17-latin_cyrillic-300.woff2') format('woff2'),
+       url('../font/open-sans-v17-latin_cyrillic-300.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroy-300-normal.woff2') format('woff2'), 
-	     url('gilroy-300-normal.woff') format('woff');
+    src: url('../font/gilroy-300-normal.woff2') format('woff2'), 
+	     url('../font/gilroy-300-normal.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroy-800-normal.woff2') format('woff2'), 
-	  url('gilroy-800-normal.woff') format('woff');
+    src: url('../font/gilroy-800-normal.woff2') format('woff2'), 
+	  url('../font/gilroy-800-normal.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
