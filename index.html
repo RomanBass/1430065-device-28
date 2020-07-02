@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body> 	
 	<header  class="header-main">
@@ -24,9 +24,9 @@
 			<a href="warranty.html" class="warranty-header">ГАРАНТИЯ</a>
 			<a href="contacts.html" class="contacts-header">КОНТАКТЫ</a>
 			<div class="rectangle-white"></div>
-			<div class="catalog-options-popup">
+			<div class="catalog-options-popup" tabindex="0">
 				<ul>
-					<li><a href="blank.html">Виртуальная реальность</a></li>
+					<li><a href="blank.html" class="virtual-reality">Виртуальная реальность</a></li>
 					<li><a href="catalog.html">Моноподы для селфи</a></li>
 					<li><a href="blank.html">Экшн-камеры</a></li>
 				</ul>
@@ -35,7 +35,7 @@
 					<li><a href="blank.html">Умные часы</a></li>
 				</ul>
 				<ul>
-				<li><a href="blank.html">Квадрокоптер</a></li>
+				<li><a href="blank.html" tabindex="0">Квадрокоптер</a></li>
 				</ul>
 			</div>			
 		</nav>	
@@ -44,11 +44,11 @@
 		<h1 class="visually-hidden">Магазин "Дивайс"</h1>
 		<section class="slider-section">		
 			<input type="radio" name="slider-up" value="no" class="slider-toggle-up1 visually-hidden" id="slider-toggle-up1" checked>
-				<label for="slider-toggle-up1"></label>
+			<label for="slider-toggle-up1"></label>
 			<input type="radio" name="slider-up" value="no" class="slider-toggle-up2  visually-hidden" id="slider-toggle-up2">
-				<label for="slider-toggle-up2"></label>
+			<label for="slider-toggle-up2"></label>
 			<input type="radio" name="slider-up" value="no" class="slider-toggle-up3  visually-hidden" id="slider-toggle-up3">
-				<label for="slider-toggle-up3"></label>
+			<label for="slider-toggle-up3"></label>
 			<div class="slider slider-1">
 				<div class="slider-picture">
 					<a href="blank.html">					
@@ -157,11 +157,11 @@
 			<section class="conditions">
 				<div class="conditions-blank"></div>			
 				<input type="radio" name="slider-conditions" value="no" class="slider-toggle-delivery visually-hidden" id="delivery" checked>
-					<label for="delivery" class="label-delivery" tabindex="0">Доставка</label>
+				<label for="delivery" class="label-delivery" tabindex="0">Доставка</label>
 				<input type="radio" name="slider-conditions" value="no" class="slider-toggle-warranty visually-hidden" id="warranty">
-					<label for="warranty" class="label-warranty" tabindex="0">Гарантия</label>
+				<label for="warranty" class="label-warranty" tabindex="0">Гарантия</label>
 				<input type="radio" name="slider-conditions" value="no" class="slider-toggle-credit visually-hidden" id="credit">
-					<label for="credit" class="label-credit" tabindex="0">Кредит</label>	
+				<label for="credit" class="label-credit" tabindex="0">Кредит</label>	
 				<div class="delivery-slide conditions-slide">
 					<div>
 						<h3>Доставка</h3>
@@ -200,7 +200,7 @@
 				<h3>О нас</h3>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из нас.</p>
 				<p>Мы можем доставить ваш товар в самые отдалённые точки <br>России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul class="curiers">
+				<ul class="couriers">
 					<li>Деловые линии</li>
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
@@ -215,7 +215,7 @@
 					<img src="img/map.png" width="560" height="222" alt="Карта с адресом, город Москва улица строителей, дом 15">
 				</a>
 				<div class="big-map">
-					<button type="button" aria-label="Закрыть форму" class="button-close-big-map"></button>
+					<button type="button" aria-label="Закрыть карту большого масштаба" class="button-close-big-map"></button>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.11237494738!2d37.527429316200156!3d55.68703400452959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593322320719!5m2!1sru!2sru" width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					<img src="img/map_popup.png" width="994" height="593" alt="Карта большого масштаба">
 				</div>
@@ -237,6 +237,9 @@
 				<a href="delivery.html" class="delivery-footer">ДОСТАВКА</a>
 				<a href="warranty.html" class="warranty-footer">ГАРАНТИЯ</a>
 				<a href="contacts.html" class="contacts-footer">КОНТАКТЫ</a>
+				<a href="delivery.html" class="delivery-footer">ДОСТАВКА</a>
+				<a href="warranty.html" class="warranty-footer">ГАРАНТИЯ</a>
+				<a href="contacts.html" class="contacts-footer">КОНТАКТЫ</a>
 				<a href="tel:+74954959595" class="phone-number">Тел.: +7 (495) 495-95-95</a>
 			</div>
 			<div class="partner-links">
@@ -249,23 +252,23 @@
 		</footer> 
 	</div>
 	<form action="https://echo.htmlacademy.ru" method="post" class="feedback">
-				<button type="button" aria-label="Закрыть форму" class="button-close"></button>
-				<div class="feedback-fields">
-					<p class="appointment-item">
-						<label for="your-name">Ваше имя:</label>
-						<input class="feedback-input feedback-name" id="your-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*" required>
-					</p>
-					<p class="appointment-item">
-						<label for="your-email">Ваш e-mail:</label>
-						<input class="feedback-input feedback-email" id="your-email" type="email" name="email" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-					</p>
-					<p class="appointment-item text">
-						<label for="your-text" class="label-text">Текст письма:</label>
-						<textarea class="feedback-input" id="your-text" name="text" placeholder="В свободной форме" required></textarea>
-					</p>
-				</div>
-				<button type="submit" class="button-send-form">ОТПРАВИТЬ</button>	
-			</form>
+		<button type="button" aria-label="Закрыть форму" class="button-close"></button>
+		<div class="feedback-fields">
+			<p class="appointment-item">
+				<label for="your-name">Ваше имя:</label>
+				<input class="feedback-input feedback-name" id="your-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*" required>
+			</p>
+			<p class="appointment-item">
+				<label for="your-email">Ваш e-mail:</label>
+				<input class="feedback-input feedback-email" id="your-email" type="email" name="email" placeholder="email@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+			</p>
+			<p class="appointment-item text">
+				<label for="your-text" class="label-text">Текст письма:</label>
+				<textarea class="feedback-input" id="your-text" name="text" placeholder="В свободной форме" required></textarea>
+			</p>
+		</div>
+		<button type="submit" class="button-send-form">ОТПРАВИТЬ</button>	
+	</form>
 <script src="js/script.min.js"></script>
 </body>
 </html>

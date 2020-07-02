@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   
 <body> 	
@@ -63,10 +63,10 @@
 				<li><a href="blank.html">По типу</a></li>
 				<li><a href="blank.html">По популярности</a></li>
 			</ul>
-			<a href="blank.html" class="filter-arrow-up">
+			<a href="blank.html" class="filter-arrow-up" aria-label="элемент сортировки по возрастанию">
 				<img src="img/icon-up-dir.svg" width="11" height="10" alt="иконка сортировки по возрастанию">
 			</a>
-			<a href="blank.html" class="filter-arrow-down">
+			<a href="blank.html" class="filter-arrow-down" aria-label="элемент сортировки по убыванию">
 				<img src="img/icon-down-dir.svg" width="11" height="10" alt="иконка сортировки по убыванию">
 			</a>
 			</div>
@@ -130,7 +130,7 @@
 								<label for="filter-bluetooth-yes" tabindex="0">Есть</label>
 							</li>	
 							<li>
-							<input type="radio" name="bluetooth" value="no" class="filter-bluetooth-radio visually-hidden" id="filter-bluetooth-no">
+								<input type="radio" name="bluetooth" value="no" class="filter-bluetooth-radio visually-hidden" id="filter-bluetooth-no">
 								<label for="filter-bluetooth-no" tabindex="0">Нет</label>
 							</li>	
 							</ul>
@@ -149,7 +149,7 @@
 						</div>				
 					</a>
 					<a href="blank.html" class="cart-button">В КОРЗИНУ</a>
-					<button type="submit" class="compare-button">Добавить к сравнению</button>
+					<button type="button" class="compare-button">Добавить к сравнению</button>
 				</div>	
 				<div class="catalog-item-info">
 					<a href="blank.html"><img src="img/item-21.jpg" width="360" height="380" alt="Профессиональная селфи-палка" class="catalog-image">	
