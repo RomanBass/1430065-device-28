@@ -246,8 +246,8 @@ header {
 	opacity: 0.6;	
 }
 
-.enter-header:focus {
-	opacity: 0.3;	
+.enter-header:active {
+	opacity: 0.6;	
 }
 
 .exit-header {
@@ -303,10 +303,11 @@ header {
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 33px;
-
 }
 
 .catalog {
+	position: relative
+	z-index: 5;
 	padding-right: 38px;
 	padding-top: 0px;
 	padding-bottom: 1px;
@@ -315,6 +316,7 @@ header {
 	background-image: url(../img/plus.svg);
 	background-repeat: no-repeat;
 	background-position: 210px 4px;	
+
 }
 
 .catalog:hover {
@@ -377,38 +379,38 @@ header {
 	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	display: none;
+	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;	
 	list-style: none;
 	background: var(--special-yellow);
 	letter-spacing: 0;
-	z-index: 2;
+	z-index: -1;
 	transition: height 0.3s ease;
 }
-
+		
 .catalog-options-popup .active {
 	opacity: 0.3;
 }
 
 .catalog:hover ~ .catalog-options-popup {
 	display: flex;
+	z-index: 2;
 }
 
 .catalog:focus ~ .catalog-options-popup {
 	display: flex;
+	z-index: 2;
 }
 
 .catalog-options-popup:focus-within {
 	display: flex;
+	z-index: 2;
 }
 
 .catalog-options-popup:hover {
 	display: flex;
-}
-
-.catalog-options-popup:focus {
-	display: flex;
+	z-index: 2;
 }
 
 .catalog:active ~ .catalog-options-popup {
