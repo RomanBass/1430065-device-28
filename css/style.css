@@ -753,37 +753,122 @@ content: "";
 }
 
 .catalog-icon-link {
+	position: relative;
 	width: 160px;
 }
 
-.catalog-icon {
+.catalog-icon-link::before {
+	position: absolute;
+	content: "";
 	width: 160px;
 	height: 160px;
 	background-color: var(--special-yellow);
-	transition: all 0.6s ease;
+	top: 0px;
+	left: 0px;
 }
 
-.catalog-icon-link:hover > .catalog-icon {
+.catalog-icon-link:hover::before {
+	position: absolute;
+	content: "";
+	width: 160px;
+	height: 160px;
 	background-color: var(--special-yellow-dark);
-	transition: all 0.4s ease;
+	top: 0px;
+	left: 0px;
 }
 
-.catalog-icon-link img{
-	opacity: 1;
-	transition: all 0.3s ease;
+.virtual-reality.catalog-icon-link::after {
+	position: absolute;
+	content: url(../img/catalog-part1.svg);	
+	top: 52px;
+	left: 31px;
 }
-.catalog-icon-link:active img{
+
+.virtual-reality.catalog-icon-link:active::after {
+	position: absolute;
+	content: url(../img/catalog-part1.svg);	
+	top: 52px;
+	left: 31px;
 	opacity: 0.3;
-	transition: all 0.3s ease;
 }
 
-.catalog-icon-link:active p{
+.monopod.catalog-icon-link::after {
+	position: absolute;
+	content: url(../img/catalog-part2.svg);	
+	top: 26px;
+	left: 37px;
+}
+
+.monopod.catalog-icon-link:active::after {
+	position: absolute;
+	content: url(../img/catalog-part2.svg);	
+	top: 26px;
+	left: 37px;
 	opacity: 0.3;
-	transition: all 0.3s ease;
 }
 
-.catalog-options-index p{
-	margin-top: 38px;
+.action-camera.catalog-icon-link::after {
+	position: absolute;
+	content: url(../img/catalog-part3.svg);	
+	top: 36px;
+	left: 44px;
+}
+
+.action-camera.catalog-icon-link:active::after {
+	position: absolute;
+	content: url(../img/catalog-part3.svg);	
+	top: 36px;
+	left: 44px;
+	opacity: 0.3;
+}
+
+.fitness-bracelet.catalog-icon-link::after {
+	position: absolute;
+	content: url(../img/catalog-part4.svg);	
+	top: 48px;
+	left: 27px;
+}
+
+.fitness-bracelet.catalog-icon-link:active::after {
+	position: absolute;
+	content: url(../img/catalog-part4.svg);	
+	top: 48px;
+	left: 27px;
+	opacity: 0.3;
+}
+
+.smart-watch.catalog-icon-link::after {
+	position: absolute;
+	content: url(../img/catalog-part5.svg);	
+	top: 31px;
+	left: 52px;
+}
+
+.smart-watch.catalog-icon-link:active::after {
+	position: absolute;
+	content: url(../img/catalog-part5.svg);	
+	top: 31px;
+	left: 52px;
+	opacity: 0.3;
+}
+
+.quadrocopter.catalog-icon-link::after {
+	position: absolute;
+	content: url(../img/catalog-part6.svg);	
+	top: 46px;
+	left: 14px;
+}
+
+.quadrocopter.catalog-icon-link:active::after {
+	position: absolute;
+	content: url(../img/catalog-part6.svg);	
+	top: 46px;
+	left: 14px;
+	opacity: 0.3;
+}
+
+.catalog-icon-link p{
+	margin-top: 198px;
 	margin-bottom: 0;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
@@ -792,42 +877,12 @@ content: "";
 	letter-spacing: 0.05em;
 }
 
-.catalog-options-index a:nth-child(4) p{
-	letter-spacing: 0;
+.fitness-bracelet p{
+	letter-spacing: 0em;
 }
 
-.catalog-options-index a:nth-child(1) img{
-	padding-top: 52px;
-	padding-left: 31px;
-}
-
-.catalog-options-index a:nth-child(2) img{
-	padding-top: 26px;
-	padding-left: 37px;
-}
-
-.catalog-options-index a:nth-child(3) img{
-	padding-top: 36px;
-	padding-left: 44px;
-}
-
-.catalog-options-index a:nth-child(4) img{
-	padding-top: 48px;
-	padding-left: 27px;
-}
-
-.catalog-options-index a:nth-child(5) img{
-	padding-top: 31px;
-	padding-left: 52px;
-}
-
-.catalog-options-index a:nth-child(6) img{
-	padding-top: 46px;
-	padding-left: 14px;
-}
-
-.virtual-reality-link {
-	padding-left: 1px;
+.catalog-icon-link:active p {
+	opacity: 0.3;
 }
 
 .conditions h3 {
