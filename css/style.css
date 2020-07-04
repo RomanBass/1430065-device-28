@@ -1205,7 +1205,8 @@ content: "";
 	z-index: 4;
 	top: calc((100% - 560px) / 2);
 	left: calc((100% - 959px) / 2);
-	display: block;
+	display: none;
+	box-shadow: 0px 10px 16px var(--special-black-opacitive04);
 }
 
 .big-map-show {
@@ -2052,7 +2053,6 @@ legend{
 	letter-spacing: 0.2em;
 	z-index: 0;
 	cursor: pointer;
-	outline: none;
 }
 
 .show-button::before {
@@ -2068,8 +2068,7 @@ legend{
 }
 
 .show-button:hover::before,
-.show-button:active::before,
-.show-button:focus::before {
+.show-button:active::before {
 	content: "";
 	position: absolute;
 	width: 200px;
@@ -2133,6 +2132,8 @@ legend{
 	top: 180px;
 	left: 117px;
 	z-index: 0;
+	color: var(--basic-black);
+	transition: color 1s ease;
 }
 
 .cart-button:hover,
@@ -2153,8 +2154,7 @@ legend{
 }
 
 .cart-button:hover::before,
-.cart-button:active::before,
-.cart-button:focus::before  {
+.cart-button:active::before  {
 	content: "";
 	position: absolute;
 	width: 200px;
@@ -2172,12 +2172,6 @@ legend{
 	transition: color 0.25s ease;
 }
 
-.cart-button {
-	color: var(--basic-black);
-	outline: none;
-	transition: color 1s ease;
-}
-
 .compare-button {
 	font-family: "Open Sans", "Verdana", sans-serif;
 	font-size: 13px;
@@ -2191,7 +2185,6 @@ legend{
 	left: 97px;
 	z-index: 0;
 	opacity: 0.5;
-	outline: none;
 	cursor: pointer;
 }
 
