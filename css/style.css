@@ -724,7 +724,7 @@ content: "";
 }
 
 .slide-item-description div{
-	margin-right: 62px;
+	margin-right: 60px;
 }
 
 .slide-item-description03 div {
@@ -1778,26 +1778,40 @@ ul.couriers{
 	padding-left: 60px;
 }
 
-.filter-price{
+.filter-price{	
+	margin-top: 87px; 
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
 
-.rectangle-200x2-price {
-	margin-top: 70px;
-	margin-bottom: 15px;
-	width: 200px;
-	height: 2px;
-	background: var(--basic-black);
+.filter-color {
+	margin-top: 53px;
 }
 
-.rectangle-200x2 {
-	margin-top: 36px;
-	margin-bottom: 14px;
+.filter-bluetooth {
+	margin-top: 43px;
+}
+
+.filter-section {
+	position: relative;	
+}
+
+.filter-section::before {
+	content: "";
+	position: absolute;
 	width: 200px;
 	height: 2px;
 	background: var(--basic-black);
+	top: -17px;
+	left: 0px;
+}
 
+.filter-section.color {
+	margin-bottom: 17px;
+}
+
+.filter-section.bluetooth {
+	margin-bottom: 18px;
 }
 
 .filter-option {
@@ -1842,8 +1856,6 @@ legend{
 	margin-bottom: 13px;
 }
 
-
-
 .range-controls .scale {
 	height: 2px;
 	background-color: var(--basic-black);
@@ -1879,10 +1891,6 @@ legend{
 	left: 114px;
 }
 
-.filter-option {
-	margin-top: 32px;
-}
-
 .filter-option li {
 	position: relative;
 	margin-bottom: 20px;
@@ -1891,14 +1899,6 @@ legend{
 
 .filter-option li:last-child {
 	margin-bottom: 0px;
-}
-
-.rectangle-200x2-bluetooth {
-	width: 200px;
-	height: 2px;
-	background-color: var(--basic-black);
-	margin-top: 26px;
-	margin-bottom: 15px;
 }
 
 .filter-option label {
