@@ -1200,12 +1200,12 @@ content: "";
 
 .big-map {
 	position: fixed;
-	width: 994px;
-	height: 593px;
+	width: 960px;
+	height: 560px;
 	z-index: 4;
-	top: calc((100% - 593px) / 2);
-	left: calc((100% - 994px) / 2);
-	display: none;
+	top: calc((100% - 560px) / 2);
+	left: calc((100% - 959px) / 2);
+	display: block;
 }
 
 .big-map-show {
@@ -1224,8 +1224,8 @@ content: "";
 	position: absolute;
 	width: 55px;
 	height: 55px;
-	margin-top: -12px;;
-	margin-right: -12px;
+	margin-top: -20px;;
+	margin-right: -29px;
 	top: 42px;
 	right: 48px;
 	padding: 0;
@@ -1831,6 +1831,7 @@ legend{
 	border: none;
 	background-color: var(--basic-grey-light);
 	outline: none;
+	-moz-appearance: textfield;
 }
 
 .range-controls {
