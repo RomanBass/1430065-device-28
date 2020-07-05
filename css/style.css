@@ -81,17 +81,17 @@ img {
 	opacity: 0.3;
 }
 
-h1 {
+.heading-1 {
 	font-size: 47px;
 	line-height: 58px;
 }
 
-h2 {
+.heading-2  {
 	font-size: 47px;
 	line-height: 58px;
 }
 
-h3 {
+.heading-3 {
 	font-size: 47px;
 	line-height: 58px;
 	letter-spacing: 0.2em;
@@ -631,7 +631,7 @@ content: "";
 	margin-right: 53px;
 }
 
-.slider h2{
+.slider .heading-2 {
 	margin-top: -59px;
 	margin-bottom: 26px;
 }	
@@ -884,7 +884,7 @@ content: "";
 	opacity: 0.3;
 }
 
-.conditions h3 {
+.conditions .heading-3 {
 	margin-top: 86px;
 	margin-bottom: 40px;
 }
@@ -1358,7 +1358,7 @@ content: "";
 	position: relative;
 }
 
-.about-us-and-contacts h3 {
+.about-us-and-contacts .heading-3 {
 	margin-top: 57px;
 	margin-bottom: 40px;
 }
