@@ -478,7 +478,7 @@ img {
 }
 
 .slider-toggle-up1:focus + label::before {
-content: "";
+	content: "";
 	position: absolute;
 	width: 10px;
 	height: 10px;
@@ -496,7 +496,7 @@ content: "";
 }
 
 .slider-toggle-up2 + label::before {
-content: "";
+	content: "";
 	position: absolute;
 	width: 10px;
 	height: 10px;
@@ -508,7 +508,7 @@ content: "";
 }
 
 .slider-toggle-up2:focus + label::before {
-content: "";
+	content: "";
 	position: absolute;
 	width: 10px;
 	height: 10px;
@@ -526,7 +526,7 @@ content: "";
 }
 
 .slider-toggle-up3 + label::before {
-content: "";
+	content: "";
 	position: absolute;
 	width: 10px;
 	height: 10px;
@@ -538,7 +538,7 @@ content: "";
 }
 
 .slider-toggle-up3:focus + label::before {
-content: "";
+	content: "";
 	position: absolute;
 	width: 10px;
 	height: 10px;
@@ -568,7 +568,7 @@ content: "";
 }
 
 .slider-toggle-up2:checked + label::after {
-content: "";
+	content: "";
 	position: absolute;
 	width: 4px;
 	height: 4px;
@@ -580,7 +580,7 @@ content: "";
 }
 
 .slider-toggle-up3:checked + label::after {
-content: "";
+	content: "";
 	position: absolute;
 	width: 4px;
 	height: 4px;
@@ -717,7 +717,7 @@ content: "";
 
 .slide-details:hover::before,
 .slide-details:active::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: calc(100% + 18px);
@@ -1171,7 +1171,7 @@ content: "";
 }
 
 .write-us::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: 8px;
@@ -1187,7 +1187,7 @@ content: "";
 
 .write-us:hover::before,
 .write-us:active::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: calc(100% + 18px);
@@ -1296,7 +1296,7 @@ content: "";
 }
 
 .our-detailes::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: 8px;
@@ -1312,7 +1312,7 @@ content: "";
 
 .our-detailes:hover::before,
 .our-detailes:active::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: calc(100% + 18px);
@@ -2628,7 +2628,7 @@ ul.couriers{
 }
 
 .partner-links::before {
-	content:"";
+	content: "";
 	position: absolute;
 	top: 11px;
 	width: 80px;
