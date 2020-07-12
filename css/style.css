@@ -1403,12 +1403,13 @@ img {
 	z-index: 3;
 	display: none;
 	width: 960px;
-	height: 550px;
+	min-height: 550px;
 	overflow-y: overlay;
 	margin: auto;
-	top: 0;
+	top: 50%;
 	left: calc((100% - 988px) / 2);
-	bottom: 0;
+	transform: translateY(-50%);
+	max-height: 100vh;
 	background-color: var(--basic-white);
 	box-shadow: 0px 10px 16px var(--special-black-opacitive015);
 }
@@ -2738,19 +2739,19 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce-left {
 	0% {
-	transform: translateX(-2000px);
+	transform: translate(-2000px, -50%);
 	}
 
 	70% {
-	transform: translateX(30px);
+	transform: translate(30px, -50%);
 	}
 
 	90% {
-	transform: translateX(-10px);
+	transform: translate(-10px, -50%);
 	}
 
-	100% {
-	transform: translateX(0);
+	to {
+	transform: translate(0, -50%);
 	}
 }
 
