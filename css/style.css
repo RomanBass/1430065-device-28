@@ -2802,8 +2802,8 @@ input[type="radio"].visually-hidden {
 	font-style: normal;
 	font-weight: 300;
 	src: local("Open Sans Light"), local("OpenSans-Light"),
-		url("../font/open-sans-v17-latin_cyrillic-300.woff2") format("woff2"),
-		url("../font/open-sans-v17-latin_cyrillic-300.woff") format("woff");
+		url("../font/open-sans-v17-latin-cyrillic-300.woff2") format("woff2"),
+		url("../font/open-sans-v17-latin-cyrillic-300.woff") format("woff");
 }
 
 @font-face {

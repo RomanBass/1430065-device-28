@@ -4,7 +4,7 @@ let feedbackLink = document.querySelector(".write-us");
 let feedbackPopup = document.querySelector(".feedback");
 let feedbackClose = document.querySelector(".button-close");
 
-feedbackLink.addEventListener("click", function (evt){
+feedbackLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedbackPopup.classList.add("feedback-show");
 	feedbackName.value = storageName;
@@ -17,13 +17,13 @@ feedbackClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (feedbackPopup.classList.contains("feedback-show")) {
-      evt.preventDefault();
-      feedbackPopup.classList.remove("feedback-show");
-	  feedbackPopup.classList.remove("feedback-error");
-    }
-  }
+	if (evt.keyCode === 27) {
+	if (feedbackPopup.classList.contains("feedback-show")) {
+		evt.preventDefault();
+		feedbackPopup.classList.remove("feedback-show");
+		feedbackPopup.classList.remove("feedback-error");
+		}
+	}
 });
 
 //dialog popup check, if the inputs are incorrect
@@ -31,16 +31,16 @@ window.addEventListener("keydown", function (evt) {
 let sendForm = document.querySelector(".button-send-form");
 let feedbackInputs = document.querySelectorAll(".feedback-input");
 let isValid;
-sendForm.addEventListener("click", function (evt) {	
+sendForm.addEventListener("click", function (evt) {
 	for (let feedbackInput of feedbackInputs) {
-		isValid = feedbackInput.validity;		
-			if (isValid.valueMissing || isValid.patternMismatch) {
-			feedbackPopup.classList.remove("feedback-error");
-			feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-			feedbackPopup.classList.add("feedback-error");
-			console.log("no");
-			break;
-			}
+		isValid = feedbackInput.validity;
+		if (isValid.valueMissing || isValid.patternMismatch) {
+		feedbackPopup.classList.remove("feedback-error");
+		feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+		feedbackPopup.classList.add("feedback-error");
+		console.log("no");
+		break;
+		}
 	}
 });
 
