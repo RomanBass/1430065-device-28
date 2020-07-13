@@ -32,7 +32,14 @@
 	--special-green: #91c92f;
 }
 
-body {
+.page {
+	height: 100%;
+}
+
+.page-body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
 	position: relative;
 	min-width: 1440px;
 	margin: 0;
@@ -596,15 +603,8 @@ img {
 .slider-toggle-up3 {
 	position: absolute;
 	top: 220px;
+	left: 50%;
 	z-index: -1;
-}
-
-.slider-toggle-up2 {
-	left: 20px;
-}
-
-.slider-toggle-up3 {
-	left: 40px;
 }
 
 .slider-1,
@@ -1018,7 +1018,7 @@ img {
 	font-size: 15px;
 	line-height: 28px;
 	letter-spacing: 0.1em;
-	
+	margin-bottom: 50px;
 }
 
 .delivery-slide:before {
@@ -1033,6 +1033,7 @@ img {
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.1em;
+		margin-bottom: 50px;
 }
 
 .warranty-slide:before {
@@ -1047,6 +1048,7 @@ img {
 	font-size: 15px;
 	line-height: 28px;
 	letter-spacing: 0.1em;
+	margin-bottom: 50px;
 }
 
 .credit-slide:before {
